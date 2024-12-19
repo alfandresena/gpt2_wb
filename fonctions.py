@@ -93,15 +93,3 @@ def train_and_save_model(trainer, output_dir):
     trainer.save_model()  # Sauvegarder le modèle
     trainer.tokenizer.save_pretrained(output_dir)  # Sauvegarder le tokenizer
     print("Entraînement terminé et modèle sauvegardé dans:", output_dir)
-
-# Exemple d'utilisation
-if __name__ == "__main__":
-    google_drive_link = "LIEN_PARTAGEABLE_GOOGLE_DRIVE"
-    csv_path = "data.csv"  # Chemin local pour sauvegarder le fichier téléchargé
-
-    # Télécharger le CSV depuis Google Drive
-    downloaded_csv_path = download_csv_from_drive(google_drive_link, csv_path)
-    print(f"Fichier CSV téléchargé: {downloaded_csv_path}")
-
-    # Charger et préparer les données
-    train_dataset, eval_dataset = load_and_prepare_data(downloaded_csv_path)
