@@ -2,7 +2,7 @@ from fonctions import (
     GPT2LMHeadModel,
     GPT2Tokenizer,
     login_wandb,
-    download_csv_from_drive,  # Nouvelle fonction d'importation
+    download_csv_from_drive,
     load_and_prepare_data,
     preprocess_data,
     configure_training,
@@ -12,7 +12,7 @@ from fonctions import (
 # Fonction principale
 def main():
     # Lien Google Drive du fichier CSV
-    google_drive_link = "LIEN_PARTAGEABLE_GOOGLE_DRIVE"  # Remplacez par le lien partageable de votre fichier CSV
+    google_drive_link = "https://drive.google.com/file/d/15lmWc_nmDQCasDuW-OK8mKxuczJ0DZXU/view?usp=sharing"  # Remplacez par le lien partageable de votre fichier CSV
     csv_path = "rakitra.csv"  # Chemin local où le fichier CSV sera sauvegardé
     output_dir = "./output"  # Dossier de sortie pour les modèles et logs
 
