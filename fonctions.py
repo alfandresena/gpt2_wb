@@ -69,7 +69,7 @@ def configure_training(model, train_dataset, eval_dataset, tokenizer, output_dir
         eval_steps=500,  # Fréquence des évaluations
         save_steps=500,
         per_device_train_batch_size=8,
-        num_train_epochs=1,
+        num_train_epochs=2,
         save_total_limit=2,  # Limiter les checkpoints sauvegardés
         logging_dir=f"{output_dir}/logs",
         logging_steps=100,  # Fréquence des logs
